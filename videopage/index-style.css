@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #212121;
+    color :#fff;
+    font-weight: 400;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+nav{
+    background-color: #212121;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+.left img:hover{
+    cursor: pointer;
+}
+nav .middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 3px;
+    width : 40%;
+}
+.middle img:hover{
+    cursor: pointer;
+}
+nav .middle input{
+    background-color: black;
+    border: none;
+    height: 40px;
+    padding: 10px;
+    color : #fff;
+    font-size: 18px;
+    width : 100%;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+input:focus{
+    outline: none;
+}
+nav .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 10px;
+}
+.right img:hover{
+    cursor: pointer;
+}
+main{
+    max-width: 85%;
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+    gap : 20px;
+}
+main .left{
+    min-width: 65%;
+    height: 100vh;
+    background-color: pink;
+}
+main .right{
+    height: 100vh;
+    background-color: lightgreen;
+    min-width: 35%;
+}
+.like-views {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.like-views .likes{
+    display: flex;
+    gap: 10px;
+}
+.like-views div span{
+    font-size : 15px;
+}
+.video{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+.video .title{
+    font-size: 23px;
+}
+.channel-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.channel {
+    display: flex;
+    justify-content: space-between;
+}
+.channel .details{
+    display: flex;
+}
+.details .title{
+    font-size: 18px;
+}
+.channel-details p{
+    margin-left: 8%;
+}
+.details .subs{
+    font-size: 12px;
+}
+.subscribe button{
+    background-color: #cc0000;
+    color : #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 2px;
+}
+.subscribe button:hover{
+    cursor: pointer;
+}
+hr{
+    opacity: 0.2;
+}
+.comment{
+    display : flex;
+}
+.comment .user-details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.user-details .username{
+    font-size: 14px;
+}
+.user-details .cmnt{
+    font-size: 17px;
+    font-weight: 300;
+}
+.video-chip{
+    padding:5px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+.video-chip .image img{
+    width: 180px;
+}
+.video-chip .desc{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.video-chip .desc .title{
+    width: 90%;
+    font-size: 14px;
+}
+.video-chip .desc .channel-name{
+    color: #ffffffca;
+    font-size: 12px;
+}
+.video-chip .desc .views span{
+    color: #ffffffca;
+    font-size: 12px;
+}
